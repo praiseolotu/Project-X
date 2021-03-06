@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth;
+}
+
+.parallaximg1, .parallaximg2, .parallaximg3 {
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* This is what makes our web page a parallax webpage as the background image is fixed to the browser */
+}
+
+.parallaximg1 {
+    background: url("parralex%20background.jpg");
+    min-height: 100%;
+    /* This makes it possible that the above image covers the whole screen */
+}
+
+.parallaximg2 {
+    background: url("sec_img_parallex.jpg");
+    min-height: 600px;
+}
+
+.parallaximg3 {
+    background: url("2nd.jpeg");
+    min-height: 600px;
+}
+
+.section {
+    text-align: center;
+    padding: 60px 80px;
+}
+
+.section_1 {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section_2 {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.parallax_text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.parallax_text .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.parallax_text .border.transient {
+    background-color: transparent;
+}
+
+.parallax_text span.arrow_button {
+    position: absolute;
+    top: 5em;
+}
+@media(max-width: 568px) {
+    .parallaximg1, .parallaximg2, .parallaximg3 {
+        background-attachment: scroll;
+    }
+}

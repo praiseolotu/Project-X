@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.landing {
+    background: #fff;
+}
+
+.landing_text {
+    display: flex;
+    flex: 0 1 40vw; /* flex grow flex shrink flex basis */
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.landing_text h2 {
+    color: #888;
+}
+
+#landing_image {
+    background: url(landing%20photo.jfif);
+    /* background: url(myTunes%20img%203.jpeg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: all 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+    transform: translateY(8px);
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: 1px dotted #fff;
+    display: inline-block;
+    /*display: block;*/
+    padding: 0 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+}
+
+.img_size {
+    width : 1024px;
+}
+
+/* Screen size greater than 350px */
+@media(min-width: 350px) {
+    .img_size {
+        width: 350px;
+    }
+}
+/* Screen size greater than 500px */
+
+@media(min-width: 500px) {
+    .landing {
+        display: flex;
+        height: 100%;
+    }
+    .landing_text {
+        height: 100vh;
+    }
+    #landing_image {
+        height: 100vh;
+    }
+    .img_size {
+        width: 540px;
+    }
+}
+
+/* Screen size greater than 700px */
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+    .img_size {
+        width: 750px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .img_size {
+        width: 900px;
+    }
+}

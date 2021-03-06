@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Page</title>
+</head>
+
+<body onload="alert('Welcome to this Page.')">
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#What_to_Know">What you should Know</a>
+            </li>
+            <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring_variables">Declaring Variables in Python</a>
+            </li>
+            <li>
+                <a href="#variable_scope" class="nav-link">Variable Scope</a>
+            </li>
+            <li>
+                <a href="#data_types" class="nav-link">Data Types</a>
+            </li>
+            <li>
+                <a href="#if_else" class="nav-link">If else Statement</a>
+            </li>
+            <li>
+                <a href="#while_statement" class="nav-link">While Statement</a>
+            </li>
+            <li>
+                <a href="#func_declaration" class="nav-link">Function Declaration</a>
+            </li>
+            <li>
+                <a href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Python is a cross platform, object oriented programming language, it
+                    is a small and lightweight programming language.
+                </p>
+                <p>
+                    It was created by Guiddo van Rossum in 1990. Python comes with a
+                    rich set of library objects, Dictionary, Sets, and Math functions.
+                    Python can be used in the following field.
+                </p>
+                <ul>
+                    <li>
+                        Web Development(Backend). Using frameworks like Django, Flask etc
+                    </li>
+                    <li>
+                        Desktop Development(GUIs). Using frameworks like Tkinter, PyQt
+                        etc.
+                    </li>
+                    <li>Artificial Intelligence / Machine Learning</li>
+                    <li>Numeric Computation</li>
+                    <li>Game Development</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_to_Know">
+            <header>What you should know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>Some programming experience</li>
+                    <li>Experience with other programming languages</li>
+                    <li>Desire and willingness to learn</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="hello_world">
+            <header>Hello World</header>
+            <article>
+                <p>
+                    To get started writing Python, first open any IDE or text editor of
+                    your choice and let's write some Python code.
+                </p>
+                <code>print("Hello World") </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>You use variables as symbolic names in your application. The name of variables, also called identifiers conform to certain rules.</p>
+            <p>In Python, variables names starts with lowercase, and if your variable name has more than one word, then you use camel case notation or you separate the words with an underscore (_).
+            </p>
+            <code>
+                # I declared an integer varaible a
+                int a
+                # I declared a double varaible b
+                double b
+            </code>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables in Python</header>
+            <article>
+                You can declare variables in two ways:
+                <p>
+                    You can just declare the variables straight up:
+                    <code>b = 42</code>
+                    Python knows that you are assigning the integer 42 to b.
+                </p>
+                <p>You can specify the variable datatype beforehand:
+                    <code>int b = 42</code>
+                    We are telling Python that variable b can only store an integer.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="variable_scope">
+            <header>Variable Scope</header>
+            <article>
+                <p>When you declare a variable outside any function, then that variable is a global variable. But when you declare a variable inside a function, then that variable is a local variable.</p>
+                <code>
+                    <pre>
+                d = 3.142 # global variable
+                    
+                def func():
+                    c = 14 # local variable
+                    print("Local Variable")
+                    </pre>
+                </code>
+            </article>
+        </section>
+        <section id="data_types" class="main-section">
+            <header>Data Types</header>
+            <article>There are several data types in Python. These are:
+            <ul>
+                <li>Numbers. These include integers(numbers with no floating point), floating point numbers(eg 3.142), complex numbers(numbers with imaginary parts), decimals(numbers with fixed precision), rationals/fraction(numbers with numerator and denominator)</li>
+                <li>Strings</li>
+                <li>List</li>
+                <li>Dictionaries</li>
+                <li>Tuples</li>
+                <li>Files</li>
+                <li>Sets</li>
+                <li>Boolean (This has a true or false value)</li>
+            </ul>
+            
+            
+            </article>
+        </section>
+        <section class="main-section" id="if_else">
+            <header>if...else Statement</header>
+            <article>
+                <p>Use the if statement to execute a logical statement if condition is true. Use the exception else statement to execute a logical statement if condition is false.</p>
+                <code>
+                        <pre>
+                    if <em>condition</em>:
+                        <em>statement</em>
+                    else:
+                        <em>statement</em>
+                </pre>
+                </code>
+                <p>You may also compound the statement using elif if you have multiple conditions to test. In the case of multiple conditions only the first logical condition which evaluates to true will be executed</p>
+                    <code>
+                        <pre>
+                if <em>condition</em>:
+                    <em>statement</em>
+                elif <em>condition</em>:
+                    <em>statement</em>
+                elif <em>condition</em>:
+                    <em>statement</em>
+                else:
+                    <em>statement</em>
+                </pre>
+                    </code>
+                <p>
+                    You can only have only 1 if and else with multiple elif conditions.</p>
+                
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while Statement</header>
+            <article>
+                <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+                    <code>
+                        <pre>
+                while <em>condition</em>:
+                    <em>statement</em>
+                </pre>
+                    </code>
+                <p>
+                    If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+                    The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+                </p>
+                <p>To execute multiple statements, you use identation.</p>
+                <code><pre>
+                while <em>condition</em>:
+                    <em>statement1</em>
+                    <em>statement2</em>
+                    <em>statement3</em>
+                    <em>statement4</em>
+                    <em>statement5</em>
+                </pre></code>
+            </article>
+        </section>
+        <section class = "main-section" id="func_declaration">
+            <header>Function Declaration</header>
+            <article>
+               You declare(define) a function in Python as follows: 
+                <ul>
+                    <li>def keyword</li>
+                    <li>The name of the function.(The name must start with lower case and if it contains multiple words, then use camel case notation)</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas</li>
+                    <li>A colon(:)</li>
+                </ul>
+                <code><pre>
+                def sum(inta, int b, int c):
+                    return a + b + c
+                def mult(float a, float b):
+                    return a * b
+                </pre></code>
+            </article>
+        </section>
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>More information can be found on <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target = "_blank">Wikipedia</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body></html>

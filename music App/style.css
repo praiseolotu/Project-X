@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+/* CSS Variables */
+:root {
+    --primary_color: #b90415;
+    --primary_color_hover: #d3071b;
+    --secondary_color: #103063;
+    --secondary_color_hover: #143f85;
+    --light_color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: #252529;
+    margin: 0;
+    color: #fff;
+    line-height: 2;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Section class styling */
+
+.section {
+    padding: 2rem 0;
+}
+
+.section_head_logo {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.section h3 {
+    font-size: 2rem;
+}
+section#entertainment {
+    background: url('myTunes%20img%203.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.gift_cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    background: url('showcase.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#showcase .container {
+    margin-top: 25vh;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+}

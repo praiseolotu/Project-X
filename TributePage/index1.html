@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Olotu Praise Jah" />
+    <meta name="description" content="My freeCodeCamp Project">
+    <meta name="keywords" content="freeCodeCamp, Tribute, tribute, html, page, github, google">
+    <title>My Tribute Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main id="main">
+        <p>Click on the "x" symbol to close the alert message.</p>
+        <div class="alert success">
+            <span class="closebtn">&times;</span>  
+                <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+        <h1 id="title">Simple Home Page</h1>
+        <p>CS50 Project</p>
+        <figure id="img-div">
+            <img id="image" src="sec_img_parallex.jpg" alt="random text" />
+            <figcaption id="img-caption">
+                A very beautiful image.
+            </figcaption>
+        </figure>
+        <section id="tribute-info">
+            <h3 id="headline">Here are some of my project. About me first of all.</h3>
+            <ul>
+                <li>A full time Python Developer </li>
+                <li>
+                 Do you need IT service contact me <a href = "#">here</a>.
+                </li>
+                <li>
+                    Check out some of my Web Design Project <a href="#">here</a>.
+                </li>
+                <li>
+                    Read more on Python Programming Language <a href="#">here</a>.
+            </ul>
+            <blockquote>
+                <p>
+                    "Hard work beats talent if talent doesn't work hard enough."
+                </p>
+                <cite> -- Olotu Praise Jah </cite>
+            </blockquote>
+            <!--
+            <h3>
+                If you have time, you should read more about this incredible human
+                being on his
+                <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">
+                    Wikipedia entry</a>.
+            </h3>
+        -->
+        </section>
+    </main>
+    <script>
+        var close = document.getElementsByClassName(".closebtn");
+        var i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+    }
+</script>
+</body>
+
+</html>

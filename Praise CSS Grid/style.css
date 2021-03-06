@@ -1,0 +1,216 @@
+/* tag css styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    background: #333;
+    color: #fff;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+/* btn styling */
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #666;
+    margin: 0.5rem 0;
+    transition: all 2s ease;
+}
+
+.btn:hover {
+    transform: scale(0.8);
+    background: #eaeaea;
+    color: #333;
+}
+
+/* Header showcase id styling */
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .background_img {
+    position: absolute;
+    background: #333 url("background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    /* show after the text on the foreground */
+    opacity: 0.4;
+}
+
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#showcase .header_content_wrapper,
+#section_a .content_wrapper,
+#section_c .content_wrapper {
+    padding: 0 1.5em;
+}
+
+/* Section A */
+
+#section_a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+/* Section B */
+
+#section_b {
+    padding: 2em 1em 1em;
+    /* padding for top(2em) bottom(1em) right and left(1em) */
+}
+
+#section_b ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#section_b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    border-radius: 25px;
+}
+
+.card_content {
+    padding: 1.5em;
+}
+
+ul.chover:hover {
+    box-shadow: 5px 5px 2px 2px rgba(0,0,0,0.19);
+}
+
+/* Section C */
+
+#section_c {
+    background: #333;
+    color: #fff;
+    padding: 2em;
+}
+
+/* Section D */
+
+#section_d .box {
+    padding: 2em;
+    color: #fff;
+}
+
+/* Change the background color of the first child of box class */
+
+#section_d .box:first-child {
+    background: #2690d4;
+}
+
+.a_btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2em;
+    margin-left: 2em;
+    font-family: 'Berlin Sans FB Demi';
+}
+.contact_us {
+    text-shadow: 2px 1px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact_us:hover {
+    transform: translateY(8px);
+    /*transform: scale(0.9);*/
+}
+
+/* Footer */
+
+#main_footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#main_footer a{
+    text-decoration: none;
+    color: #2690d4;
+}
+
+/* Media Queries  */
+
+@media(min-width: 780px) {
+    .grid {
+        display: grid;
+        /* Create 3 columns  */
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    
+    #section_a .section_text {
+        /* Split text into 2 with space of 2em */
+        columns: 2;
+        column-gap: 2em;
+    }   
+    
+    #section_a .section_text p{
+        padding-top: 0;
+    }
+    
+    .header_content_wrapper,
+    .content_wrapper,
+    #section_b ul {
+        /* Start column line 2 till column line 4 */
+        grid-column: 2/4;
+    }
+    
+    .box,
+    #main_footer div {
+        grid-column: span 2;
+    }
+    
+    #section_b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #section_b li {
+        width: 31%;
+    }
+}
+
