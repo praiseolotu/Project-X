@@ -79,3 +79,142 @@ section#entertainment {
 #showcase h1 {
     font-size: 4rem;
 }
+
+
+#showcase h2 {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer .footer_columns {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 15px;
+}
+
+footer .footer_columns ul {
+    list-style: none;
+}
+
+/* Targets every list first child */
+
+footer .footer_columns ul li:first-child {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+    margin-bottom: 1rem;
+}
+
+footer .footer_bottom {
+    padding: 1rem;
+    background: #333;
+}
+/* container class */
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* stream_leads class */
+.stream_leads {
+    font-size: 1.3rem;
+}
+
+.text_center {
+    text-align: center;
+}
+
+/* btn classes */
+
+.btn {
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.btn_primary {
+    background: var(--primary_color);
+    transition: transform 1s ease;
+}
+.btn_primary:hover {
+    background: var(--primary_color_hover);
+    transform: translateY(8px);
+    transform: scale(0.8);
+}
+
+.btn_secondary {
+    background: var(--secondary_color);
+    transition: transform 1s ease;
+}
+
+.btn_secondary:hover {
+    background: var(--secondary_color_hover);
+    transform: translateY(8px);
+    transform: scale(0.8);
+}
+
+/* Light text styling */
+
+.light_text {
+    color: var(--light_color);
+}
+
+.text_sec{
+     background: var(--secondary_color);
+}
+
+.text_primary {
+    background: var(--primary_color);
+}
+
+.video_bg_light {
+    background: var(--light_color);
+    color: #333;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+/* Navigation(nav) */
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: rgb(51,34,34);
+    position: fixed;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
