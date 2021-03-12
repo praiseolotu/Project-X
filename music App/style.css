@@ -172,7 +172,7 @@ footer .footer_bottom {
 }
 
 .text_sec{
-     background: var(--secondary_color);
+     color: var(--secondary_color);
 }
 
 .text_primary {
