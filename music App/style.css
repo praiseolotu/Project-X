@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'PT Sans', sans-serif;
-    background: #252529;
+    background-color: #252529;
     margin: 0;
     color: #fff;
     line-height: 2;
@@ -67,7 +67,7 @@ section#entertainment {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     position: relative;
     overflow-y: hidden;
 }
